@@ -1,0 +1,89 @@
+:root{
+  --bg-color: rgb(185, 116, 116);
+  --header-color: rgba(255, 1, 242, 0.357);
+  --text-color: rgb(199, 39, 178);
+  --section-bc-color: rgb(52, 68, 110);
+}
+
+html{
+    font-size: 14pt;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+section{
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    background-color: var(--section-bc-color);
+    width: 900px;
+}
+
+#AlexeyPyataev{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h1,h2{
+    color: var(--header-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+dl, ol{
+    padding-left: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li::before{
+    content: "* ";
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1px;
+  width: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+th, td {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+@media (max-width: 850px){
+    section{
+        padding: 0px;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    ::-webkit-scrollbar{
+        width: 6px;
+    }
+    h1, h2 {
+        font-family: "Caveat", Arial, Helvetica, sans-serif !important;
+        font-weight: 400;
+    }
+}
