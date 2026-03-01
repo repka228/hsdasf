@@ -32,6 +32,7 @@ section{
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
 
 h1,h2{
