@@ -1,23 +1,26 @@
-:root{
-  --bg-color: rgb(185, 116, 116);
-  --header-color: rgba(255, 1, 242, 0.357);
-  --text-color: rgb(199, 39, 178);
-  --section-bc-color: rgb(52, 68, 110);
+:root {
+    --bg-color: rgb(185, 116, 116);
+    --header-color: rgba(255, 1, 242, 0.357);
+    --text-color: rgb(160, 86, 151);
+    --section-bc-color: rgb(52, 68, 110);
+    --background-color: rgba(255, 255, 255, 0.2);
+    --border-color: rgba(255, 255, 255, 0.5);
+    --text-shadow: rgba(0, 0, 0, 0.5);
 }
 
-html{
+html {
     font-size: 14pt;
 }
 
-body{
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
-section{
+section {
     padding: 25px;
     margin-bottom: 25px;
     margin-left: auto;
@@ -27,7 +30,7 @@ section{
     width: 900px;
 }
 
-#AlexeyPyataev{
+#AlexeyPyataev {
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -35,56 +38,63 @@ section{
     margin-bottom: 10px;
 }
 
-h1,h2{
+h1, h2 {
     color: var(--header-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px var(--text-shadow);
 }
 
-dl, ol{
+p {
+    font-size: 20pt;
+}
+
+dl, ol {
     padding-left: 20px;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding-left: 20px;
 }
 
-ul li::before{
+ul li::before {
     content: "* ";
 }
 
 table {
-  border-collapse: separate;
-  border-spacing: 1px;
-  width: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+    border-collapse: separate;
+    border-spacing: 1px;
+    width: 100%;
+    border: 2px solid var(--border-color);
+    ;
 }
 
 th, td {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 12px;
-  text-align: left;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    text-align: left;
 }
 
 th {
-  background-color: rgba(255, 255, 255, 0.2);
-  font-weight: bold;
+    background-color: var(--background-color);
+    font-weight: bold;
 }
 
-@media (max-width: 850px){
-    section{
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+@media (max-width: 899px) {
+    section {
         padding: 0px;
-        margin: 0;
+        margin: 0px;
         margin-bottom: 10px;
         width: 100%;
     }
-    ::-webkit-scrollbar{
-        width: 6px;
-    }
+
     h1, h2 {
-        font-family: "Caveat", Arial, Helvetica, sans-serif !important;
+        font-family: "Caveat", Arial, Helvetica, sans-serif;
         font-weight: 400;
     }
 }
